@@ -30,11 +30,26 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  margin: 8% auto;
+  margin: 8% 8%;
+  align-items: center;
 }
 
 nav ul {
   visibility: hidden;
+}
+
+header button {
+  width: 134px;
+  height: 44px;
+  color: white;
+  background: var(--orangred);
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+  border: none;
+  transition-duration: 0.4s;
+  visibility: hidden;
+  margin-left: 320px;
 }
 
 /* Sections */
@@ -75,6 +90,7 @@ nav ul {
 .first-section p,
 .second-section p {
   line-height: 30px;
+  text-align: center;
 }
 
 .first-section button {
@@ -182,10 +198,6 @@ nav ul {
   top: -5vh;
   justify-content: center;
   align-self: center;
-}
-
-.slider {
-  width: 50px;
 }
 
 .profile-desc {
@@ -353,9 +365,16 @@ button:hover {
   /* Header */
   header {
     margin: 2% 2%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
+  header button {
+    visibility: visible;
+  }
+
+  header .burger {
+    visibility: hidden;
+  }
   nav ul {
     display: flex;
     list-style: none;
@@ -399,6 +418,11 @@ button:hover {
     padding: 0;
   }
 
+  .first-section p {
+    margin-top: 2vh;
+    width: 85%;
+    text-align: left;
+  }
   /* Second section */
   .second-section {
     flex-direction: row;
@@ -416,12 +440,13 @@ button:hover {
     font-size: 200%;
     font-weight: 700;
     padding: 0%;
-    margin: 5%;
+    margin: 4%;
     line-height: 5vh;
   }
 
   .second-section p {
-    margin: 3vh;
+    text-align: left;
+    margin: 2vh;
     width: 85%;
   }
 
@@ -551,5 +576,12 @@ button:hover {
 
   .footer-orange {
     margin-top: 100px;
+  }
+
+  .footer-black .form {
+    position: absolute;
+    right: 127px;
+    bottom: 45px;
+    margin-bottom: 20px;
   }
 }
